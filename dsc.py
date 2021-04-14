@@ -21,7 +21,7 @@ layout = [[sg.Text("Enter Channel ID")],
           [sg.Button('Ok')]]
 
 
-window = sg.Window('Window Title', layout)
+window = sg.Window('Enter Channel ID', layout)
 
 _, values = window.read()
 selectedchannelid = int(values['-INPUT-'].strip().strip("\""))
