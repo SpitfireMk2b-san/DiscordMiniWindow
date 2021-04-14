@@ -126,3 +126,4 @@ dmypy.json
 
 # Other stuff
 .DS_Store
+.idea
