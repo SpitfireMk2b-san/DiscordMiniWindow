@@ -4,7 +4,7 @@ Mini Discord Window (or MDW) is a small, subtle window that displays messages in
 
 ## Installation
 
-Download from the GitHub releases section or clone the repository (if cloning the repository and running the python files, be sure to install everything in requirements.txt), then refer to "Usage" below for instructions.
+Download from the GitHub releases section or clone the repository (if cloning the repository and running the python files, be sure to install everything in requirements.txt), then refer to "Usage" below for instructions. Currently, the only frozen release is for mac, but windows is coming soon. Until then, you'll have to clone the repository and run it with python.
 
 ## Usage
 
