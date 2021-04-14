@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minidiscordwin</title>
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">-->
+    <style>
+    body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    }
+    #maincontent {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(35, 39, 42, 0.5);
+    border-radius: 5%;
+    overflow: hidden;
+
+    }
+        .message {
+        color: white;
+        padding: 10px;
+        border-top: 1px solid white;
+        }
+        .username {
+        font-weight: bold;
+        font-size: 20px;
+        }
+        .mscontent {
+        padding-left: 10px;
+        }
+        #menubar {
+        position: fixed;
+        width: 100vw;
+        left: 0px;
+        top: 0px;
+        height: 25px;
+        background: #2C2F33;
+        }
+        #closebutton {
+        position: fixed;
+        height: 15px;
+        width: 15px;
+        background: #ce1212;
+        top: 5px;
+        left: 5px;
+        border-radius: 50%;
+        }
+        #minimizebutton {
+        position: fixed;
+        height: 15px;
+        width: 15px;
+        background: #ffb037;
+        top: 5px;
+        left: 25px;
+        border-radius: 50%;
+        }
+    </style>
+    <script>
+        function create_message(uname, content) {
+            document.getElementById('maincontent').innerHTML += "<div class='message'><div class='username'>" + uname + "</div> <div class='mscontent'>" + content + "</div></div>";
+            updateScroll();
+        }
+        function updateScroll(){
+            var element = document.getElementById("maincontent");
+            element.scrollTop = element.scrollHeight;
+        }
+        setInterval(updateScroll,500);
+    </script>
+</head>
+<body>
+<div id="menubar" class="pywebview-drag-region shine"><div id="closebutton" onclick="pywebview.api.closebutton()"></div><div id="minimizebutton" onclick="pywebview.api.minbutton()"></div></div>
+<div id="maincontent">
+<div style="height: 20px"></div>
+</div>
+</body>
+</html>
