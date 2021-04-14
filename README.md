@@ -4,7 +4,7 @@ Mini Discord Window (or MDW) is a small, subtle window that displays messages in
 
 ## Installation
 
-Download from the GitHub releases section, instructions can be found in the downloaded release.
+Download from the GitHub releases section, then refer to "Usage" below for instructions.
 
 ## Usage
 
