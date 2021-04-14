@@ -2,6 +2,8 @@
 
 Mini Discord Window (or MDW) is a small, subtle window that displays messages in a certain Discord channel while staying on top of whatever you are doing.
 
+![Picture of MDW in action](/readmeimage.png)
+
 ## Installation
 
 Download from the GitHub releases section or clone the repository (if cloning the repository and running the python files, be sure to install everything in requirements.txt), then refer to "Usage" below for instructions. Currently, the only frozen release is for mac, but windows is coming soon. Until then, windows users will have to clone the repository and run it with python.
